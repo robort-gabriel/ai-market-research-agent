@@ -38,7 +38,7 @@
 
 ## Overview
 
-Get a fast, ongoing read on any industry or niche with minimal effort. This AI agent automation workflow runs a three-stage pipeline: it scans for relevant competitors and new tools/products entering the space, monitors for emerging trends and recent industry news, then analyzes both into one report — a plain-language recap and a short, prioritized list of recommended opportunities, each traceable to a specific finding. Runs entirely on free, built-in Zo Computer tools, no paid competitive-intelligence, trend-tracking, or market-data API required. Every skill is also compatible with Claude AI or any agentic framework, not just Zo's own routing.
+Get a fast, ongoing read on any industry or niche with minimal effort. This AI agent automation workflow runs a three-stage pipeline: it scans for relevant competitors and new tools/products entering the space, monitors for emerging trends and recent industry news, then analyzes both into one report, a plain-language recap and a short, prioritized list of recommended opportunities, each traceable to a specific finding. Runs entirely on free, built-in Zo Computer tools, no paid competitive-intelligence, trend-tracking, or market-data API required. Every skill is also compatible with Claude AI or any agentic framework, not just Zo's own routing.
 
 ## Features
 
@@ -50,7 +50,7 @@ Get a fast, ongoing read on any industry or niche with minimal effort. This AI a
 
 ## Requirements
 
-- Built-in web tools only: `web_search`, `web_research`, `x_search`, `read_webpage`/`view_webpage`/`open_webpage` — no setup needed.
+- Built-in web tools only: `web_search`, `web_research`, `x_search`, `read_webpage`/`view_webpage`/`open_webpage`. No setup needed.
 - No integration, API key, or paid third-party service is required or supported. This pipeline never calls a paid competitive-intelligence, trend-tracking, or market-data API.
 
 ## Installation
@@ -87,7 +87,7 @@ No secrets required. Per-run parameters, passed stage to stage:
 
 | Parameter | Required | Default | Used by |
 | --- | --- | --- | --- |
-| `niche` | Yes (or set in `config/research-topic.md`) | — | all three skills |
+| `niche` | Yes (or set in `config/research-topic.md`) | - | all three skills |
 | `topic_file` | No | `config/research-topic.md` | `market-research` / `trend-monitor` |
 | `run_date` | No | today's date | all three skills |
 | `notify` | No | `none` (`email` also supported) | `business-analyst` / automation |

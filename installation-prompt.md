@@ -1,6 +1,6 @@
-# AI Market Research Agent — Installation Prompt
+# AI Market Research Agent: Installation Prompt
 
-Paste everything below the line into a **new Zo chat** and send it. It's self-contained — the AI reading it has no memory of how this project was built, so it spells out every step. Swap the repo URL first if you're installing from a fork.
+Paste everything below the line into a **new Zo chat** and send it. It's self-contained. The AI reading it has no memory of how this project was built, so it spells out every step. Swap the repo URL first if you're installing from a fork.
 
 ---
 
@@ -8,7 +8,7 @@ Fetch and install the "AI Market Research Agent" Zo automation from this public 
 
 `https://github.com/robort-gabriel/ai-market-research-agent`
 
-Do the following, in order. Steps marked **(confirm)** must not proceed until I explicitly approve — don't treat silence or a prior approval as blanket permission.
+Do the following, in order. Steps marked **(confirm)** must not proceed until I explicitly approve. Don't treat silence or a prior approval as blanket permission.
 
 ### 1. Fetch the repo
 
@@ -31,7 +31,7 @@ Do the following, in order. Steps marked **(confirm)** must not proceed until I 
 ### 2. Verify the skills
 
 - Confirm each of `Skills/market-research/SKILL.md`, `Skills/trend-monitor/SKILL.md`, `Skills/business-analyst/SKILL.md` exists and has valid frontmatter (`name` matching its folder, non-empty `description`).
-- These skills are project-local by design. Do not copy them into the global `Skills/` folder or any other project — this automation only ever reads/writes inside `/home/workspace/Zo-Automations/ai-market-research-agent/` and its output folder `/home/workspace/Content/Market-Research/`.
+- These skills are project-local by design. Do not copy them into the global `Skills/` folder or any other project. This automation only ever reads/writes inside `/home/workspace/Zo-Automations/ai-market-research-agent/` and its output folder `/home/workspace/Content/Market-Research/`.
 
 ### 3. Set up the research topic
 
@@ -49,13 +49,13 @@ Do the following, in order. Steps marked **(confirm)** must not proceed until I 
 
 - **(confirm)** Ask me for: run frequency (e.g. weekly), and whether I want the report emailed to me (`notify=email`) or just saved to the workspace (`notify=none`, the default).
 - Do not create the scheduled agent until I explicitly confirm frequency and notify preference.
-- Explain plainly what the automation will do (run the 3-skill pipeline, write files under `Content/Market-Research/`, and optionally email me the report), how often it will run, and that each run is a full Zo session — without inventing a specific cost figure.
+- Explain plainly what the automation will do (run the 3-skill pipeline, write files under `Content/Market-Research/`, and optionally email me the report), how often it will run, and that each run is a full Zo session, without inventing a specific cost figure.
 - If I confirm, create a scheduled agent using the instructions in `automation-prompt.md` (filled in with my values) as its prompt, on the frequency I gave.
-- If I decline or want to think about it, skip this step — ad hoc usage still works without it.
+- If I decline or want to think about it, skip this step. Ad hoc usage still works without it.
 
 ### 6. Report back
 
 - Confirm: the install path, whether the folder was overwritten or created fresh, the niche and any competitors/focus areas added to `config/research-topic.md`, which persona was created (and whether it's active), and whether a recurring automation was set up (with its schedule and notify setting) or left for later.
 - Give me one ready-to-run example prompt from `starter-prompts.md` so I can try the pipeline ad hoc right away.
 
-Throughout all of this, do not read, write, or modify any files outside `/home/workspace/Zo-Automations/ai-market-research-agent/` and `/home/workspace/Content/Market-Research/`, and do not call any paid or external API — this automation is built to run entirely on free, built-in Zo tools (`web_search`, `web_research`, `x_search`, `read_webpage`/`view_webpage`) with no sign-up or API key required.
+Throughout all of this, do not read, write, or modify any files outside `/home/workspace/Zo-Automations/ai-market-research-agent/` and `/home/workspace/Content/Market-Research/`, and do not call any paid or external API. This automation is built to run entirely on free, built-in Zo tools (`web_search`, `web_research`, `x_search`, `read_webpage`/`view_webpage`) with no sign-up or API key required.

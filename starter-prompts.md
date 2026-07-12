@@ -10,4 +10,4 @@
 
 ## Custom
 
-> Just run market-research for "[your niche]" and tell me who the competitors are and any new tools showing up — skip the trend and recommendation stages.
+> Just run market-research for "[your niche]" and tell me who the competitors are and any new tools showing up, skip the trend and recommendation stages.

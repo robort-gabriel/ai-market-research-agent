@@ -9,7 +9,7 @@ metadata:
 
 ## Overview
 
-Given an industry or niche, this skill scans recent news and social discourse to surface emerging trends and produces a plain-language news summary. It relies only on `web_search` (with `topic="news"`), `web_research`, and `x_search` — no paid trend-tracking or media-monitoring API.
+Given an industry or niche, this skill scans recent news and social discourse to surface emerging trends and produces a plain-language news summary. It relies only on `web_search` (with `topic="news"`), `web_research`, and `x_search`. No paid trend-tracking or media-monitoring API is used.
 
 ## Inputs
 
@@ -22,11 +22,11 @@ Given an industry or niche, this skill scans recent news and social discourse to
 
 1. **Scan recent news.** Run `web_search(topic="news", time_range=time_range)` with 2-3 differently-worded queries about `<niche>` to get broad coverage. Follow up with `web_research` for anything that looks significant but thin on detail.
 2. **Scan social discourse.** Run `x_search` for `<niche>` and, if focus areas are given, for each focus area, to capture trends/sentiment that haven't hit mainstream news coverage yet.
-3. **Identify trends.** Group what you found into 3-6 named trends (e.g. "shift toward usage-based pricing", "rising interest in on-device inference"). A trend must be backed by at least two independent sources found in steps 1-2 — a single article is news, not yet a trend.
+3. **Identify trends.** Group what you found into 3-6 named trends (e.g. "shift toward usage-based pricing", "rising interest in on-device inference"). A trend must be backed by at least two independent sources found in steps 1-2. A single article is news, not yet a trend.
 4. **Write the output file** at `Content/Market-Research/<niche-slug>/<run_date>/trends-news.md` using this structure:
 
 ```markdown
-# Trends & News — <niche> — <run_date>
+# Trends & News: <niche> (<run_date>)
 
 ## Emerging Trends
 ### <Trend name>
@@ -35,7 +35,7 @@ Given an industry or niche, this skill scans recent news and social discourse to
 - Source: <URL>
 
 ## News Summary
-- <Plain-language recap of a notable news item> — Source: <URL>
+- <Plain-language recap of a notable news item>, Source: <URL>
 
 ## Notes
 <Anything ambiguous, single-sourced, or worth flagging to the next stage.>
@@ -45,4 +45,4 @@ Given an industry or niche, this skill scans recent news and social discourse to
 
 ## Output
 
-`Content/Market-Research/<niche-slug>/<run_date>/trends-news.md` — consumed by `business-analyst` in stage 3.
+`Content/Market-Research/<niche-slug>/<run_date>/trends-news.md`: consumed by `business-analyst` in stage 3.

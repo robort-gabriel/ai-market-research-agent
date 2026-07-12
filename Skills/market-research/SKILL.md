@@ -9,7 +9,7 @@ metadata:
 
 ## Overview
 
-Given an industry or niche, this skill identifies (or updates) the set of relevant competitors/players, checks each for recent moves (launches, pricing changes, positioning shifts), and separately scans for new tools/products entering the space. It relies only on `web_search`, `web_research` (category `company`), `x_search`, and `read_webpage`/`view_webpage` — no paid competitive-intelligence or scraping API.
+Given an industry or niche, this skill identifies (or updates) the set of relevant competitors/players, checks each for recent moves (launches, pricing changes, positioning shifts), and separately scans for new tools/products entering the space. It relies only on `web_search`, `web_research` (category `company`), `x_search`, and `read_webpage`/`view_webpage`. No paid competitive-intelligence or scraping API is used.
 
 ## Inputs
 
@@ -25,15 +25,15 @@ Given an industry or niche, this skill identifies (or updates) the set of releva
 4. **Write the output file** at `Content/Market-Research/<niche-slug>/<run_date>/market-scan.md` using this structure:
 
 ```markdown
-# Market Scan — <niche> — <run_date>
+# Market Scan: <niche> (<run_date>)
 
 ## Competitors Monitored
-- **<Competitor>** — <homepage URL>
+- **<Competitor>**: <homepage URL>
   - Recent activity: <what changed, or "no notable change found">
   - Source: <URL>
 
 ## New Tools / Products Discovered
-- **<Tool name>** — <one-line description> — Source: <URL>
+- **<Tool name>**: <one-line description>, Source: <URL>
 
 ## Notes
 <Anything ambiguous, unconfirmed, or worth flagging to the next stage.>
@@ -43,4 +43,4 @@ Given an industry or niche, this skill identifies (or updates) the set of releva
 
 ## Output
 
-`Content/Market-Research/<niche-slug>/<run_date>/market-scan.md` — consumed by `business-analyst` in stage 3.
+`Content/Market-Research/<niche-slug>/<run_date>/market-scan.md`: consumed by `business-analyst` in stage 3.
