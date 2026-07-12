@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="176" viewBox="0 0 560 176" role="img" aria-labelledby="ptitle pdesc">
+  <title id="ptitle">AI Market Research Agent pipeline</title>
+  <desc id="pdesc">Scan, Monitor, Analyze pipeline for ongoing market intelligence</desc>
+  <rect width="560" height="176" rx="14" fill="#1c1917"/>
+  <rect x="1.5" y="1.5" width="557" height="173" rx="12.5" fill="none" stroke="#44403c"/>
+  <text x="280" y="28" fill="#a8a29e" text-anchor="middle" font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">SCAN · MONITOR · ANALYZE</text>
+
+  <!-- Stage 1 -->
+  <g transform="translate(24 44)">
+    <rect width="150" height="96" rx="10" fill="#292524" stroke="#fb923c" stroke-width="1.5"/>
+    <text x="75" y="24" fill="#fdba74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">SCAN</text>
+    <text x="75" y="46" fill="#e7e5e4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">Identifies competitors</text>
+    <text x="75" y="60" fill="#e7e5e4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">and new tools</text>
+    <text x="75" y="82" fill="#a8a29e" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9">market-research</text>
+  </g>
+
+  <path d="M180 92 L 202 92" stroke="#fb923c" stroke-width="2" fill="none" marker-end="url(#arrow1)"/>
+
+  <!-- Stage 2 -->
+  <g transform="translate(206 44)">
+    <rect width="150" height="96" rx="10" fill="#292524" stroke="#22d3ee" stroke-width="1.5"/>
+    <text x="75" y="24" fill="#67e8f9" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">MONITOR</text>
+    <text x="75" y="46" fill="#e7e5e4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">Finds trends and</text>
+    <text x="75" y="60" fill="#e7e5e4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">summarizes news</text>
+    <text x="75" y="82" fill="#a8a29e" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9">trend-monitor</text>
+  </g>
+
+  <path d="M362 92 L 384 92" stroke="#22d3ee" stroke-width="2" fill="none" marker-end="url(#arrow2)"/>
+
+  <!-- Stage 3 -->
+  <g transform="translate(388 44)">
+    <rect width="150" height="96" rx="10" fill="#292524" stroke="#a78bfa" stroke-width="1.5"/>
+    <text x="75" y="24" fill="#c4b5fd" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">ANALYZE</text>
+    <text x="75" y="46" fill="#e7e5e4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">Synthesizes into</text>
+    <text x="75" y="60" fill="#e7e5e4" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">ranked opportunities</text>
+    <text x="75" y="82" fill="#a8a29e" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9">business-analyst</text>
+  </g>
+
+  <defs>
+    <marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L 6 3 L 0 6 Z" fill="#fb923c"/>
+    </marker>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L 6 3 L 0 6 Z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+</svg>
